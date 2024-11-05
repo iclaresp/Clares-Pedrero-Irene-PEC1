@@ -480,7 +480,7 @@ Para facilitar la comprensión del análisis univariante podemos emplear gráfic
 
 Dada la naturaleza de nuestros datos (n=45), decidimos usar los boxplots como herramienta de representación gráfica del análisis univariante. Querer generar 45 histogramas diferentes es no sólo ambicioso sino muy demandante y los límites de la representación se resienten.
 
-```{r, echo=F}
+```{r, echo=FALSE}
 # Creamos un vector con los colores que usaremos luego en el boxplot
 color <- c(rep("cyan3",15), rep("green3",15), rep("firebrick3",15))
 
