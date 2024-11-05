@@ -519,6 +519,86 @@ El principal inconveniente de estos análisis es que sólo nos están dando info
 
 Si queremos intentar sacar conclusiones de nuestros datos, requerimos de un análisis más exhaustivo.
 
+## Análisis multivariante
+
+Recurrimos al análisis multivariante de nuestros datos ómicos para obtener más información.
+
+Para hacer este análisis, vamos a recurrir a las funciones del paquete `POMA` de `Bioconductor`, ya que está pensado para trabajar con contenedores del tipo `SummarizedExperiment` facilitando en análisis de sus datos. 
+
+El uso de `POMA` se ha preferido, ya que al recurrir a funciones empleadas en el análisis de datos ómicos definidos en otros ejercicios de ejemplo (disponibles entre los recursos de la asignatura), llevan a código no ejecutable debido a diferentes errores.
+
+En primer lugar y antes de hacer el análisis multivariante, debemos especificar la transformación de los datos usando la función nativa de POMA `PomaNorm`. 
+
+```{r}
+
+SE_POMA <- SE_PEC_full # Creamos el contenedor para trabajar con POMA
+
+# Transformamos los datos para hacerles un escalado logarítmico como vimos 
+# anterior
+
+SE_POMA_Norm <- PomaNorm(SE_POMA, method = "log_pareto")
+
+```
+
+
+`POMA`, además, nos podría haber servido para hacer un pre-procesado de las muestras: 
+
+```{r, eval=FALSE}
+
+# Podríamos eliminar valores NA
+SE_POMA_2 <- PomaImpute(SE_PEC, method = "knn", ZerosAsNA = F, RemoveNA = T, 
+                      cutoff = 50)
+
+# El visualizado de las entradas del assay serán iguales para los SE generados
+# a mano o con POMA.
+
+assay(SE_POMA_2)[1:5, 1:5]
+assay(SE_PEC_full)[1:5, 1:5]
+
+# También podríamos deshacernos de los outliers
+
+SE_POMA_outlier <- PomaOutliers(SE_POMA_Norm, do="analyze")
+SE_POMA_outlier$polygon_plot # Los visualizamos
+
+SE_POMA_processed <- PomaOutliers(SE_POMA_Norm, do="clean")
+
+```
+
+
+Además se podría haber usado para el anásis univariante, tal y como se muestra en el siguiente código que hacemos **no** ejecutable.
+
+```{r, eval=FALSE}
+
+SE_POMA_processed <- PomaOutliers(SE_POMA_Norm, do="clean")
+POMA_normalized <- PomaNorm(SE_POMA_processed, method = "log_scaling")
+PomaDensity(SE_POMA_processed, group = "samples")
+PomaBoxplots(SE_POMA_processed, group = "samples")
+
+
+```
+
+Hacemos el código no ejecutable porque `PomaDensity()` y `PomaBoxplot()` dan error debido a cómo están construidos los datos de nuestro `SummarizedExperiment`. Al haber datos idénticos en columnas del `rowData()` del SE, las instrucciones de POMA entran en conflicto y el código no corre. Esto tendría fácil solución; pero no es el objetivo de la PEC.
+
+Proseguimos con el análisis multivariante haciendo un análisis de componentes principales (PCA) para las muestras. Por fortuna, este paquete cuenta con una función propia para hacer este análisis.
+
+```{r}
+
+SE_POMA_processed <- PomaOutliers(SE_POMA_Norm, do="clean")
+POMA_PCA <- PomaMultivariate(SE_POMA_processed, method = "pca", ellipse = F)
+POMA_PCA$scoresplot
+POMA_PCA$biplot
+
+```
+
+Por desgracia y pese a que estamos usando un paquete pensado para trabajar con `SummarizedExperiments`, el análisis de los datos es, cuanto menos, poco informativo.
+
+Los gráficos no son claros por lo que su interpretación no sería útil en este caso. Probablemente haya una mejor forma de hacerlo o un tratamiento previo de los mismos que permita hacer un mejor visionado de ellos.
+
+Por el momento toca reconocer y asumir nuestras limitaciones como analistas ómicos *amateur* y esperar a aprender más para repetir este análisis más adelante con (si todo va bien) mejores resultados.
+
+Con esto damos por concluido el análisis exploratorio de nuestros datos, un paso imprescindible antes de realizar cualquier análisis estadístico intensivo.
+
+
 # 4. Repositorio en GitHub
 
 ## Creando el repositorio
