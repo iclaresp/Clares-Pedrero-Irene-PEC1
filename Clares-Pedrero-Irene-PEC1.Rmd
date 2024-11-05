@@ -272,9 +272,9 @@ De forma similar a lo que hicimos en el subapartado anterior, vamos a hacer que 
 
 Para ello seguiremos lo que antes tomábamos como tercer posible método: extraer los valores contenidos en una columna dataframe y usarlos como nuevos `rownames()`.
 
-Redefinimos los `rownames` para que coincidan con los valores de rowname de `features`. Un vistazo a ambos conjuntos de datos evidenciarán que la ID de los metabolitos de `features` corresponde a los que aparecen en la columna `PubChem` de `metabolite_metadata`.
+Redefinimos los `rownames` para que coincidan con los valores de rowname de `features`. Un vistazo a ambos conjuntos de datos evidenciarán que la ID de los metabolitos de `features` corresponde a los que aparecen en la columna `PubChem` de `metabolite_metadata`. Obtendremos un objeto ya modificado al que llamaremos `metabolite_md_row`.
 
-```{r}
+```{r, echo= F}
 
 #Visualizamos las primeras entradas del dataset
 head(metabolite_metadata)
