@@ -120,10 +120,10 @@ Dado que los archivos tienen un formato similar al archivo que contenía los dat
 
 ```{r}
 
-sample_metadata <- read.csv("metadata.csv", sep = ';', row.names = 1)
+sample_metadata <- read.csv("Data RAW/metadata.csv", sep = ';', row.names = 1)
 head(sample_metadata,5)
 
-metabolite_metadata <- read.csv("metaboliteNames.csv", sep = ';', row.names = 1)
+metabolite_metadata <- read.csv("Data RAW/metaboliteNames.csv", sep = ';', row.names = 1)
 head(metabolite_metadata,5)
 
 ```
