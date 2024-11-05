@@ -596,3 +596,5 @@ Ya sabemos cómo generar nuestros archivos para el repositorio, ahora sólo qued
 Siempre es más recomendable crear primero el GitHub y el proyecto después; pero como no lo sabíamos hasta entrar en faena, se hizo al revés. Se ha solucionado fácilmente creando un nuevo proyecto y generando un `Markdown` idéntico al original.
 
 ### Archivos de Clares-Pedrero-Irene-PEC1
+
+Los archivos son
