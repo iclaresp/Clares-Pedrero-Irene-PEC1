@@ -485,7 +485,7 @@ Dada la naturaleza de nuestros datos (n=45), decidimos usar los boxplots como he
 color <- c(rep("cyan3",15), rep("green3",15), rep("firebrick3",15))
 
 boxplot(assay(SE_PEC_full), las=2, col = color, 
-        main = "Boxplot de valores de expresión", xlab = "Samples")
+        main = "Expression values boxplot", xlab = "Samples")
 
 ```
 
@@ -493,10 +493,10 @@ El boxplot de los datos evidencia una clara asimetría en los mismos. Esto sugie
 
 Un posible tratamiento de los datos puede ser una transformación logarítmica:
 
-```{r}
+```{r, echo=FALSE}
 
 boxplot(log(assay(SE_PEC_full)), las=2, col = color, 
-        main = "Boxplot de valores de expresión", xlab = "Samples")
+        main = "Expression log(values) boxplot", xlab = "Samples")
 
 ```
 
