@@ -553,7 +553,7 @@ Accedemos a nuestra cuenta en `GitHub` y creamos un nuevo repositorio que vamos 
 
 Este nuevo repositorio está vacío a excepción de un archivo `README.md` opcional; pero pronto iremos poblándolo.
 
-Nuestro repositorio puede accederse desde [aquí]().
+Nuestro repositorio puede accederse desde [aquí](https://github.com/iclaresp/Clares-Pedrero-Irene-PEC1).
 
 ### Importando archivos
 
