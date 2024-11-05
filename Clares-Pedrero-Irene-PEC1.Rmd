@@ -214,7 +214,7 @@ Pasamos a demostrar las 3 formas.
 # Indicamos que los valores de row.names están en la segunda columna cuando
 # importamos el archivo.
 
-sample_metadata_c2 <- read.csv("metadata.csv", sep = ';', row.names = 2)
+sample_metadata_c2 <- read.csv("Data RAW/metadata.csv", sep = ';', row.names = 2)
 head(sample_metadata_c2,5) # Obtenemos un dataframe con las columnas desordenadas
 
 # MÉTODO 2.
