@@ -1752,7 +1752,7 @@ característica de interés para la fila correspondiente en el
 característica, como ID de genes or transcritos.</p>
 </div>
 <div id="selección-del-dataset-de-estudio." class="section level1">
-<h1>1. Selección del <em>dataset</em> de estudio.</h1>
+<h1>Selección del <em>dataset</em> de estudio.</h1>
 <p>Tras revisar los datos disponibles en el repositorio de github, nos
 decidimos a emplear los datos contenidos en la carpeta <a href="https://github.com/nutrimetabolomics/metaboData/blob/main/Datasets/2024-fobitools-UseCase_1">2024-fobitools-UseCase_1</a>.
 Estos datos han sido descargados desde el repositorio de metabolomics
@@ -1776,7 +1776,7 @@ KEGG.</li>
 </ol>
 </div>
 <div id="construcción-de-summarizedexperiment." class="section level1">
-<h1>2. Construcción de <code>SummarizedExperiment</code>.</h1>
+<h1>Construcción de <code>SummarizedExperiment</code>.</h1>
 <p>Podemos construir nuestro objeto <code>SummarizedExperiment</code>
 (SE) descargando los 3 archivos por separado y construyendo el SE <em>de
 novo</em>.</p>
@@ -2274,7 +2274,7 @@ trabajar con él.</p>
 </div>
 </div>
 <div id="análisis-exploratorio-de-los-datos" class="section level1">
-<h1>3. Análisis exploratorio de los datos</h1>
+<h1>Análisis exploratorio de los datos</h1>
 <p>Una vez contamos con nuestro contenedor
 <code>SummarizedExperiment</code> ya creado, procedemos a hacer un
 análisis exploratorio de los datos similar al que hemos visto en algunos
@@ -2622,7 +2622,7 @@ estadístico intensivo.</p>
 </div>
 </div>
 <div id="repositorio-en-github" class="section level1">
-<h1>4. Repositorio en GitHub</h1>
+<h1>Repositorio en GitHub</h1>
 <div id="creando-el-repositorio" class="section level2">
 <h2>Creando el repositorio</h2>
 <p>Uno de los objetivos particulares de esta PEC es la creación de un
@@ -2851,7 +2851,7 @@ contiene este informe.</p>
 <span id="cb136-73"><a href="#cb136-73" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
 <span id="cb136-74"><a href="#cb136-74" tabindex="-1"></a><span class="pp">#</span><span class="er"># Las características representadas en las filas de `SummarizedExperiment` están detalladas en un objeto de tipo `Dataframe` , accesible usando la función `rowData()`. Cada fila del dataframe ofrece informacion de la característica de interés para la fila correspondiente en el `SummarizedExperiment`. Las columnas del `DataFrame` representan differentes atributos de la característica, como ID de genes or transcritos.</span></span>
 <span id="cb136-75"><a href="#cb136-75" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
-<span id="cb136-76"><a href="#cb136-76" tabindex="-1"></a><span class="pp">#</span><span class="er"># # 1. Selección del *dataset* de estudio.</span></span>
+<span id="cb136-76"><a href="#cb136-76" tabindex="-1"></a><span class="pp">#</span><span class="er"># # Selección del *dataset* de estudio.</span></span>
 <span id="cb136-77"><a href="#cb136-77" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
 <span id="cb136-78"><a href="#cb136-78" tabindex="-1"></a><span class="pp">#</span><span class="er"># Tras revisar los datos disponibles en el repositorio de github, nos decidimos a emplear los datos contenidos en la carpeta [2024-fobitools-UseCase_1](https://github.com/nutrimetabolomics/metaboData/blob/main/Datasets/2024-fobitools-UseCase_1). Estos datos han sido descargados desde el repositorio de metabolomics Workbench bajo la ID [ST000291](https://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&amp;StudyID=ST000291).</span></span>
 <span id="cb136-79"><a href="#cb136-79" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
@@ -2863,7 +2863,7 @@ contiene este informe.</p>
 <span id="cb136-85"><a href="#cb136-85" tabindex="-1"></a><span class="pp">#</span><span class="er"># 2.  `metadata.csv`. Contienen 45 filas que corresponden con las 45 columnas del archivo `features.csv` y dos columnas que describen el nombre de la muestra y el nombre de su grupo.</span></span>
 <span id="cb136-86"><a href="#cb136-86" tabindex="-1"></a><span class="pp">#</span><span class="er"># 3.  `metaboliteNames.csv`. Describe el nombre de los metabolitos, tanto su nombre original como su ID en PubChem y en KEGG.</span></span>
 <span id="cb136-87"><a href="#cb136-87" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
-<span id="cb136-88"><a href="#cb136-88" tabindex="-1"></a><span class="pp">#</span><span class="er"># # 2. Construcción de `SummarizedExperiment`.</span></span>
+<span id="cb136-88"><a href="#cb136-88" tabindex="-1"></a><span class="pp">#</span><span class="er"># # Construcción de `SummarizedExperiment`.</span></span>
 <span id="cb136-89"><a href="#cb136-89" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
 <span id="cb136-90"><a href="#cb136-90" tabindex="-1"></a><span class="pp">#</span><span class="er"># Podemos construir nuestro objeto `SummarizedExperiment` (SE) descargando los 3 archivos por separado y construyendo el SE *de novo*.</span></span>
 <span id="cb136-91"><a href="#cb136-91" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
@@ -3191,7 +3191,7 @@ contiene este informe.</p>
 <span id="cb136-413"><a href="#cb136-413" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
 <span id="cb136-414"><a href="#cb136-414" tabindex="-1"></a><span class="pp">#</span><span class="er"># En cualquier caso, ya tenemos nuestro contenedor y pasaremos a trabajar con él.</span></span>
 <span id="cb136-415"><a href="#cb136-415" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
-<span id="cb136-416"><a href="#cb136-416" tabindex="-1"></a><span class="pp">#</span><span class="er"># # 3. Análisis exploratorio de los datos</span></span>
+<span id="cb136-416"><a href="#cb136-416" tabindex="-1"></a><span class="pp">#</span><span class="er"># # Análisis exploratorio de los datos</span></span>
 <span id="cb136-417"><a href="#cb136-417" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
 <span id="cb136-418"><a href="#cb136-418" tabindex="-1"></a><span class="pp">#</span><span class="er"># Una vez contamos con nuestro contenedor `SummarizedExperiment` ya creado, procedemos a hacer un análisis exploratorio de los datos similar al que hemos visto en algunos casos de estudio.</span></span>
 <span id="cb136-419"><a href="#cb136-419" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
@@ -3392,7 +3392,7 @@ contiene este informe.</p>
 <span id="cb136-614"><a href="#cb136-614" tabindex="-1"></a><span class="pp">#</span><span class="er"># Con esto damos por concluido el análisis exploratorio de nuestros datos, un paso imprescindible antes de realizar cualquier análisis estadístico intensivo.</span></span>
 <span id="cb136-615"><a href="#cb136-615" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
 <span id="cb136-616"><a href="#cb136-616" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
-<span id="cb136-617"><a href="#cb136-617" tabindex="-1"></a><span class="pp">#</span><span class="er"># # 4. Repositorio en GitHub</span></span>
+<span id="cb136-617"><a href="#cb136-617" tabindex="-1"></a><span class="pp">#</span><span class="er"># # Repositorio en GitHub</span></span>
 <span id="cb136-618"><a href="#cb136-618" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
 <span id="cb136-619"><a href="#cb136-619" tabindex="-1"></a><span class="pp">#</span><span class="er"># ## Creando el repositorio</span></span>
 <span id="cb136-620"><a href="#cb136-620" tabindex="-1"></a><span class="pp">#</span><span class="er"># </span></span>
