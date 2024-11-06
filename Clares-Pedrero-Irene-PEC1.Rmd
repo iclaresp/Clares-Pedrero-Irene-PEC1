@@ -367,7 +367,7 @@ save(SE_PEC, file = "SummarizedExperiment_PEC.rda")
 ```
 
 
-Para nuestro gran regocijo, ya hemos conseguido construir un `SummarizedExperiment` a partir de nuestros archivos .csv descargados en el repositorio.
+Para nuestro gran regocijo, ya hemos conseguido construir un `SummarizedExperiment` a partir de nuestros archivos `.csv` descargados en el repositorio.
 
 ![](https://media1.tenor.com/m/cMfykA6dgwEAAAAd/there-was-much-rejoicing-monty-python.gif)
 
