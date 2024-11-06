@@ -677,6 +677,8 @@ Ya sabemos cómo generar nuestros archivos para el repositorio, ahora sólo qued
 
 Siempre es más recomendable crear primero el GitHub y el proyecto después; pero como no lo sabíamos hasta entrar en faena, se hizo al revés. Se ha solucionado fácilmente creando un nuevo proyecto y generando un `Markdown` idéntico al original.
 
+Tras comentar la generación de nuestro repositorio, damos por finalizada la primera PEC de la asignatura.
+
 # Referencias
 
 Además de los materiales propios de la asignatura, para la realización de este informe se han utilizado diferentes materiales de consulta.
@@ -686,3 +688,13 @@ Además de los materiales propios de la asignatura, para la realización de este
 - Guía [Git y GitHub para el usuario de R](https://mamaciasq.github.io/git-con-r/)
 -[Stackoverflow](https://stackoverflow.com/questions/tagged/r) para diferentes consultas sobre aspectos puntuales de código.
 
+# Apéndices de código
+
+Algunos bloques de código empleados a la hora de la realización de esta PEC han sido ocultados deliberadamente para no hacer del informe una ristra interminable de comandos.
+
+Se puede acceder a todo el código usando las funciones `cat()` y `readlines()`, llamando al archivo que contiene este informe.
+
+```{r,tidy=TRUE, tidy.opts=list(width.cutoff=50), echo=TRUE, class.output="c"}
+# Seleccionamos Echo true para mostrar este código.
+cat(readLines("Clares-Pedrero-Irene-PEC1.Rmd"), sep = "\n")
+```
