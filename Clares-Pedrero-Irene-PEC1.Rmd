@@ -687,7 +687,7 @@ Tras comentar la generación de nuestro repositorio, damos por finalizada la pri
 
 # Referencias
 
-Además de los materiales propios de la asignatura, para la realización de este informe se han utilizado diferentes materiales de consulta.
+Además de los materiales propios de la asignatura, para la realización de este informe se han utilizado diferentes materiales de consulta:
 
 - Manual de [SummarizedExperiment](https://bioconductor.org/packages/3.20/bioc/html/SummarizedExperiment.html) de Bioconductor.
 - Manuales de [POMA](https://www.bioconductor.org/packages/release/bioc/html/POMA.html) y [POMA Wokflow](https://rdrr.io/bioc/POMA/f/vignettes/POMA-demo.Rmd) de Bioconductor.
