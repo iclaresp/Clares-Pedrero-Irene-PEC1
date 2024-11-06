@@ -559,7 +559,15 @@ SE_PEC
 ## colData names(2): ID Treatment
 ```
 
-Para nuestro gran regocijo, ya hemos conseguido construir un `SummarizedExperiment` a partir de nuestros archivos .csv descargados en el repositorio.
+Ya hemos conseguido crear nuestro contenedor tipo `SummarizedExperiment`. Ahora sólo falta exportarlo para poder subirlo a nuestro repositorio.
+
+
+``` r
+save(SE_PEC, file = "SummarizedExperiment_PEC.rda")
+```
+
+
+Para nuestro gran regocijo, ya hemos conseguido construir un `SummarizedExperiment` a partir de nuestros archivos `.csv` descargados en el repositorio.
 
 ![](https://media1.tenor.com/m/cMfykA6dgwEAAAAd/there-was-much-rejoicing-monty-python.gif)
 
@@ -1164,13 +1172,13 @@ POMA_PCA$scoresplot
 ## (`geom_point()`).
 ```
 
-![](Clares-Pedrero-Irene-PEC1_files/figure-html/unnamed-chunk-25-1.png)<!-- -->
+![](Clares-Pedrero-Irene-PEC1_files/figure-html/POMA PCA-1.png)<!-- -->
 
 ``` r
 POMA_PCA$biplot
 ```
 
-![](Clares-Pedrero-Irene-PEC1_files/figure-html/unnamed-chunk-25-2.png)<!-- -->
+![](Clares-Pedrero-Irene-PEC1_files/figure-html/POMA PCA-2.png)<!-- -->
 
 Por desgracia y pese a que estamos usando un paquete pensado para trabajar con `SummarizedExperiments`, el análisis de los datos es, cuanto menos, poco informativo.
 
@@ -1644,7 +1652,16 @@ cat(readLines("Clares-Pedrero-Irene-PEC1.Rmd"), sep = "\n")
 ## 
 ## ```
 ## 
-## Para nuestro gran regocijo, ya hemos conseguido construir un `SummarizedExperiment` a partir de nuestros archivos .csv descargados en el repositorio.
+## Ya hemos conseguido crear nuestro contenedor tipo `SummarizedExperiment`. Ahora sólo falta exportarlo para poder subirlo a nuestro repositorio.
+## 
+## ```{r}
+## 
+## save(SE_PEC, file = "SummarizedExperiment_PEC.rda")
+## 
+## ```
+## 
+## 
+## Para nuestro gran regocijo, ya hemos conseguido construir un `SummarizedExperiment` a partir de nuestros archivos `.csv` descargados en el repositorio.
 ## 
 ## ![](https://media1.tenor.com/m/cMfykA6dgwEAAAAd/there-was-much-rejoicing-monty-python.gif)
 ## 
@@ -1873,7 +1890,7 @@ cat(readLines("Clares-Pedrero-Irene-PEC1.Rmd"), sep = "\n")
 ## 
 ## Proseguimos con el análisis multivariante haciendo un análisis de componentes principales (PCA) para las muestras. Por fortuna, este paquete cuenta con una función propia para hacer este análisis.
 ## 
-## ```{r}
+## ```{r POMA PCA}
 ## 
 ## SE_POMA_processed <- PomaOutliers(SE_POMA_Norm, do="clean")
 ## POMA_PCA <- PomaMultivariate(SE_POMA_processed, method = "pca", ellipse = F)
