@@ -58,6 +58,8 @@ El trabajo que se pretende desarrollar se resume en:
 -   Los datos en formato texto
 -   Los metadatos acerca del *dataset* en un archivo markdown. La dirección (url) del repositorio deberá estar incluida en la última sección del informe de forma clara.
 
+Aunque se indicará más adelante en el apartado 4, el repositorio creado para esta PEC se llamará "Clares-Pedrero-Irene-PEC1" y será accesible desde este [enlace](https://github.com/iclaresp/Clares-Pedrero-Irene-PEC1).
+
 # Introducción
 
 A modo de introducción, hablaremos sobre la clase `SummarizedExperiment`. Esta clase almacena matrices de resultados experimentales, comúnmente obtenidos a partir de secuenciaciones o *microarrays*. Cada objeto de esta clase, almacena informacion de una o más muestras, así como mmetadatos adicionales que descriven tanto observaciones (*features*) como muestras (*phenotypes*).
