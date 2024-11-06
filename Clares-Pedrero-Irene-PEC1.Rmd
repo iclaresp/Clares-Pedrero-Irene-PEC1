@@ -677,6 +677,12 @@ Ya sabemos cómo generar nuestros archivos para el repositorio, ahora sólo qued
 
 Siempre es más recomendable crear primero el GitHub y el proyecto después; pero como no lo sabíamos hasta entrar en faena, se hizo al revés. Se ha solucionado fácilmente creando un nuevo proyecto y generando un `Markdown` idéntico al original.
 
-### Archivos de Clares-Pedrero-Irene-PEC1
+# Referencias
 
-Los archivos son
+Además de los materiales propios de la asignatura, para la realización de este informe se han utilizado diferentes materiales de consulta.
+
+- Manual de [SummarizedExperiment](https://bioconductor.org/packages/3.20/bioc/html/SummarizedExperiment.html) de Bioconductor.
+- Manuales de [POMA](https://www.bioconductor.org/packages/release/bioc/html/POMA.html) y [POMA Wokflow](https://rdrr.io/bioc/POMA/f/vignettes/POMA-demo.Rmd) de Bioconductor.
+- Guía [Git y GitHub para el usuario de R](https://mamaciasq.github.io/git-con-r/)
+-[Stackoverflow](https://stackoverflow.com/questions/tagged/r) para diferentes consultas sobre aspectos puntuales de código.
+
