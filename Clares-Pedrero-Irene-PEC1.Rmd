@@ -587,7 +587,7 @@ Hacemos el código no ejecutable porque `PomaDensity()` y `PomaBoxplot()` dan er
 
 Proseguimos con el análisis multivariante haciendo un análisis de componentes principales (PCA) para las muestras. Por fortuna, este paquete cuenta con una función propia para hacer este análisis.
 
-```{r}
+```{r POMA PCA}
 
 SE_POMA_processed <- PomaOutliers(SE_POMA_Norm, do="clean")
 POMA_PCA <- PomaMultivariate(SE_POMA_processed, method = "pca", ellipse = F)
