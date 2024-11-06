@@ -18,6 +18,8 @@ knitr::opts_chunk$set(tidy.opts = list(width.cutoff = 60), tidy = TRUE)
 library(Biobase)
 library(BiocManager)
 library(SummarizedExperiment)
+library(metabolomicsWorkbenchR)
+library(POMA)
 library(knitr)
 library(devtools)
 library(readxl)
@@ -27,6 +29,7 @@ library(dplyr)
 library(formatR)
 library(RCurl)
 library(R.utils)
+library(tinytex)
 ```
 
 # Presentación y objetivos
@@ -480,7 +483,7 @@ Para facilitar la comprensión del análisis univariante podemos emplear gráfic
 
 Dada la naturaleza de nuestros datos (n=45), decidimos usar los boxplots como herramienta de representación gráfica del análisis univariante. Querer generar 45 histogramas diferentes es no sólo ambicioso sino muy demandante y los límites de la representación se resienten.
 
-```{r, echo=FALSE}
+```{r Boxplot unprocessed data, echo=FALSE}
 # Creamos un vector con los colores que usaremos luego en el boxplot
 color <- c(rep("cyan3",15), rep("green3",15), rep("firebrick3",15))
 
@@ -493,7 +496,7 @@ El boxplot de los datos evidencia una clara asimetría en los mismos. Esto sugie
 
 Un posible tratamiento de los datos puede ser una transformación logarítmica:
 
-```{r, echo=FALSE}
+```{r Boxplot processed data, echo=FALSE}
 
 boxplot(log(assay(SE_PEC_full)), las=2, col = color, 
         main = "Expression log(values) boxplot", xlab = "Samples")
