@@ -677,7 +677,7 @@ Si queremos que ese cambio quede reflejado en el repositorio remoto, debemos hac
 
 Para hacer `commit`, nos vale con seleccionar la opción `Staged` y validarla en `Commit`. Se nos abre un desplegable que nos permite hacer tanto el `commit` del cambio como el `push` del archivo. Es necesario hacer el `push` si queremos que el archivo del repositorio evidencie el cambio que hemos realizado, de lo contrario el cambio sólo será válido en nuestro repositorio local.
 
-Es importante ir actualizando bien los `commit`, de lo contratrio en ocasiones el entorno nos irá indicando un mensaje del tipo `your branch is ahead of 'origin/main' by 2 commits` y no nos dejará enviar nuestras actualizaciones al repositorio. Esto tiene fácil solución si en el terminal introducimos los comandos `git push origin`, aunque quizá es poco elegante.
+Es importante ir actualizando bien los `commit`, de lo contratrio en ocasiones el entorno nos irá indicando un mensaje del tipo `your branch is ahead of 'origin/main' by 2 commits` y no nos dejará enviar nuestras actualizaciones al repositorio. Esto tiene fácil solución si en el terminal introducimos los comandos `git push origin`, aunque quizá es poco elegante. En m uchas ocasiones, con tan sólo indicar `git push` en el terminal de RStudio podemos resolver este problema. El terminal es explicativo en caso de error y resolver cualquier incidente debería resultar intuitivo.
 
 Ya sabemos cómo generar nuestros archivos para el repositorio, ahora sólo quedaría irlo poblando a medida que vamos creando nuestro informe.
 
