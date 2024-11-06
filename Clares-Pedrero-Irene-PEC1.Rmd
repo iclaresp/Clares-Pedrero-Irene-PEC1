@@ -73,7 +73,7 @@ Para trabajar con `SummarizedExperiment` contamos con un paquete propio con el m
 
 Las características representadas en las filas de `SummarizedExperiment` están detalladas en un objeto de tipo `Dataframe` , accesible usando la función `rowData()`. Cada fila del dataframe ofrece informacion de la característica de interés para la fila correspondiente en el `SummarizedExperiment`. Las columnas del `DataFrame` representan differentes atributos de la característica, como ID de genes or transcritos.
 
-# 1. Selección del *dataset* de estudio.
+# Selección del *dataset* de estudio.
 
 Tras revisar los datos disponibles en el repositorio de github, nos decidimos a emplear los datos contenidos en la carpeta [2024-fobitools-UseCase_1](https://github.com/nutrimetabolomics/metaboData/blob/main/Datasets/2024-fobitools-UseCase_1). Estos datos han sido descargados desde el repositorio de metabolomics Workbench bajo la ID [ST000291](https://www.metabolomicsworkbench.org/data/DRCCMetadata.php?Mode=Study&StudyID=ST000291).
 
@@ -85,7 +85,7 @@ Estos datos constan de 3 archivos diferentes:
 2.  `metadata.csv`. Contienen 45 filas que corresponden con las 45 columnas del archivo `features.csv` y dos columnas que describen el nombre de la muestra y el nombre de su grupo.
 3.  `metaboliteNames.csv`. Describe el nombre de los metabolitos, tanto su nombre original como su ID en PubChem y en KEGG.
 
-# 2. Construcción de `SummarizedExperiment`.
+# Construcción de `SummarizedExperiment`.
 
 Podemos construir nuestro objeto `SummarizedExperiment` (SE) descargando los 3 archivos por separado y construyendo el SE *de novo*.
 
@@ -413,7 +413,7 @@ Como resultado, obtendremos también un `SummarizedExperiment` de característic
 
 En cualquier caso, ya tenemos nuestro contenedor y pasaremos a trabajar con él.
 
-# 3. Análisis exploratorio de los datos
+# Análisis exploratorio de los datos
 
 Una vez contamos con nuestro contenedor `SummarizedExperiment` ya creado, procedemos a hacer un análisis exploratorio de los datos similar al que hemos visto en algunos casos de estudio.
 
@@ -614,7 +614,7 @@ Por el momento toca reconocer y asumir nuestras limitaciones como analistas ómi
 Con esto damos por concluido el análisis exploratorio de nuestros datos, un paso imprescindible antes de realizar cualquier análisis estadístico intensivo.
 
 
-# 4. Repositorio en GitHub
+# Repositorio en GitHub
 
 ## Creando el repositorio
 
